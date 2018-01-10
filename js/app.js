@@ -1,7 +1,8 @@
 window.addEventListener("load", () => {
     let skillDiv = document.querySelector("#skill .all-skill");
     let contactDiv = document.querySelector("#contact .contact-links");
-    fetch("../portfolio/data.json").then(res => res.json()).then(data => {
+    let projectDiv = document.querySelector("#projects > div");
+    fetch("../data.json").then(res => res.json()).then(data => {
         data.skills.forEach(skill => {
             let el = document.createElement("div");
             el.className = "skill";
@@ -30,6 +31,31 @@ window.addEventListener("load", () => {
             a.appendChild(span);
             div.appendChild(a);
             contactDiv.appendChild(div);
+        });
+
+        data.projects.forEach(project => {
+            let div = document.createElement("div");
+            let desktopImg = document.createElement("img");
+            desktopImg.className = "desktop";
+            desktopImg.src = project.desktop;
+            desktopImg.alt = project.name;
+            let mobileImg = document.createElement("img");
+            mobileImg.className = "mobile";
+            mobileImg.src = project.mobile;
+            mobileImg.alt = project.name;
+            let paragraph = document.createElement("p");
+            let pText = document.createTextNode(project.name);
+            paragraph.appendChild(pText);
+            let anchor = document.createElement("a");
+            anchor.href = project.url;
+            anchor.setAttribute("target", "_blank");
+            let aText = document.createTextNode(project.name);
+            anchor.appendChild(aText);
+            div.appendChild(desktopImg);
+            div.appendChild(mobileImg);
+            div.appendChild(paragraph);
+            div.appendChild(anchor);
+            projectDiv.appendChild(div);
         })
     });
 });

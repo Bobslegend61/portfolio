@@ -17,7 +17,9 @@
         { "name": "wordpress", "link": "./img/WordPress.png" }
     ],
     "projects": [
-        { "url": "dlmymovies.com", "link": "" }
+        { "url": "http://www.dlmymovies.com/", "name": "dlmymovies", "desktop": "./img/dlmymovies.png", "mobile": "./img/dlmymoviesphone.png" },
+        { "url": "https://bobslegend61.github.io/portfolio/", "name": "my portfolio", "desktop": "./img/portfolio.png", "mobile": "./img/portfoliophone.png" },
+        { "url": "http://fashionkiller.herokuapp.com/", "name": "fashion", "desktop": "./img/fashion.png", "mobile": "./img/fashionphone.png" }
     ],
     "contact": [
         { "font": "fa fa-facebook", "name": "facebook", "link": "https://web.facebook.com/alabi.emmanuel.77" },

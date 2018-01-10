@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Bellefair");
 * {
   padding: 0;
   margin: 0; }
@@ -5,9 +6,9 @@
 body, html {
   width: 100%;
   height: 100%;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 2rem;
-  font-family: cursive; }
+  font-family: 'Bellefair', serif; }
 
 .container {
   min-height: 100%;
@@ -136,42 +137,68 @@ body, html {
 #projects, #contact .contact {
   position: relative;
   padding-top: 45px; }
-  #projects img, #contact .contact img {
+  #projects > img, #contact .contact > img {
     width: 100px;
     height: 100px;
     position: absolute;
     left: 50%;
-    top: -90%;
+    top: -8%;
     transform: translateX(-50%);
     z-index: 2;
     padding: 2px;
     border: 3px solid #fff;
     border-radius: 50%; }
   @media (min-width: 850px) {
-    #projects img, #contact .contact img {
+    #projects > img, #contact .contact > img {
       border-radius: 0;
       width: 110px;
       height: 110px;
-      top: -100%; } }
+      top: -24%; } }
+  #projects > div, #contact .contact > div {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 20px; }
+    @media (min-width: 850px) {
+      #projects > div, #contact .contact > div {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px; } }
+    #projects > div div, #contact .contact > div div {
+      position: relative; }
+      #projects > div div p, #contact .contact > div div p {
+        font-size: .7rem;
+        font-weight: bold;
+        text-transform: uppercase; }
+      #projects > div div a, #contact .contact > div div a {
+        font-size: .7rem;
+        font-weight: bold; }
+    #projects > div div img.desktop, #contact .contact > div div img.desktop {
+      width: 100%;
+      height: auto; }
+    #projects > div div img.mobile, #contact .contact > div div img.mobile {
+      position: absolute;
+      width: 130px;
+      top: 50px;
+      right: 10px; }
 
 #contact {
-  background-color: #434343;
+  background-color: #363636;
   color: #fff; }
   #contact .contact {
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    padding-top: 70px; }
     #contact .contact img {
       position: absolute;
-      top: -32%; }
+      top: -12%; }
       @media (min-width: 850px) {
         #contact .contact img {
-          top: -42%; } }
+          top: -28%; } }
   #contact .contact-links {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr !important;
     grid-gap: 3px; }
     @media (min-width: 850px) {
       #contact .contact-links {
-        grid-template-columns: 1fr 1fr 1fr 1fr; } }
+        grid-template-columns: 1fr 1fr 1fr 1fr !important; } }
     #contact .contact-links div {
       justify-self: center; }
     #contact .contact-links a {
@@ -186,6 +213,7 @@ body, html {
 #copy {
   background-color: #2a2a2a;
   color: #fff;
-  text-align: center; }
+  text-align: center;
+  font-size: .7rem; }
 
 /*# sourceMappingURL=app.css.map */

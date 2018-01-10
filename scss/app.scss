@@ -1,5 +1,6 @@
 @import "general";
 @import "mixins";
+@import url('https://fonts.googleapis.com/css?family=Bellefair');
 * {
     padding: 0;
     margin: 0;
@@ -8,9 +9,9 @@
 body, html {
     width: 100%;
     height: 100%;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 2rem;
-    font-family: cursive;
+    font-family: 'Bellefair', serif;
 }
 
 .container {
@@ -162,12 +163,12 @@ body, html {
     @extend #about-me;
     position: relative;
     padding-top: 45px;
-    img {
+    & > img {
         width: 100px;
         height: 100px;
         position: absolute;
         left: 50%;
-        top: -90%;
+        top: -8%;
         transform: translateX(-50%);
         z-index: 2;
         padding: 2px;
@@ -175,37 +176,69 @@ body, html {
         border-radius: 50%;
     }
     @include desktop {
-        img {
+        & > img {
             border-radius: 0;
             width: 110px;
             height: 110px; 
-            top: -100%;                  
+            top: -24%;                  
+        }
+    }
+    & > div {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 20px;
+        @include desktop {
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 10px;
+        }
+        div {
+            position: relative;
+            p {
+                font-size: .7rem;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+            a {
+                font-size: .7rem;
+                font-weight: bold;
+            }
+        }
+        div img.desktop {
+            width: 100%;
+            height: auto;
+        }
+        div img.mobile {
+            position: absolute;
+            width: 130px;
+            top: 50px;
+            right: 10px;
         }
     }
 }
 
 #contact {
-    background-color: darken(darkgray, 40%);
+    background-color: darken(darkgray, 45%);
     color: #fff;
     // padding-top: 80px;
     .contact {
         @extend #projects;
         margin-bottom: 0;
+        padding-top: 70px;
         img {
             position: absolute;
-            top: -32%;
+            top: -12%;
             @include desktop {
-                top: -42%;
+                top: -28%;
             }
         }
         
     }
     .contact-links {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr!important;
         grid-gap: 3px;
         @include desktop {
-            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr 1fr!important;
         }
         div {
             justify-self: center;
@@ -228,4 +261,5 @@ body, html {
     background-color: darken(darkgray, 50%);
     color: #fff;
     text-align: center;
+    font-size: .7rem;
 }
