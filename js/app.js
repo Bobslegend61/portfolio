@@ -1,7 +1,7 @@
 window.addEventListener("load", () => {
     let skillDiv = document.querySelector("#skill .all-skill");
     let contactDiv = document.querySelector("#contact .contact-links");
-    fetch("../data.json").then(res => res.json()).then(data => {
+    fetch("../portfolio/data.json").then(res => res.json()).then(data => {
         data.skills.forEach(skill => {
             let el = document.createElement("div");
             el.className = "skill";
