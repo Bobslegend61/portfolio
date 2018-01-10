@@ -1,0 +1,31 @@
+{
+    "skills": [
+        { "name": "HTML5 & CSS3", "link": "./img/html.jpg" },
+        { "name": "SASS", "link": "./img/sass.jpg" },
+        { "name": "JQUERY", "link": "./img/jquery.png" },
+        { "name": "javascript", "link": "./img/javascript.png" },
+        { "name": "reactjs", "link": "./img/react.png" },
+        { "name": "angularjs", "link": "./img/angular.jpg" },
+        { "name": "vuejs", "link": "./img/vue.png" },
+        { "name": "bootstrap", "link": "./img/bootstrap.png" },
+        { "name": "typescript", "link": "./img/typescript.png" },
+        { "name": "php", "link": "./img/php.png" },
+        { "name": "nodejs", "link": "./img/node.png" },
+        { "name": "ruby on rails", "link": "./img/ruby.jpg" },
+        { "name": "mysql", "link": "./img/mysql.png" },
+        { "name": "mongodb", "link": "./img/mongodb.jpg" },
+        { "name": "wordpress", "link": "./img/WordPress.png" }
+    ],
+    "projects": [
+        { "url": "dlmymovies.com", "link": "" }
+    ],
+    "contact": [
+        { "font": "fa fa-facebook", "name": "facebook", "link": "https://web.facebook.com/alabi.emmanuel.77" },
+        { "font": "fa fa-linkedin", "name": "linkedin", "link": "https://www.linkedin.com/in/alabi-emmanuel-9148b2a2/" },
+        { "font": "fa fa-free-code-camp", "name": "freecodecamp", "link": "https://www.freecodecamp.org/bobslegend61" },
+        { "font": "fa fa-twitter", "name": "twitter", "link": "https://twitter.com/bobslegend61" },
+        { "font": "fa fa-github", "name": "github", "link": "https://github.com/Bobslegend61" },
+        { "font": "fa fa-instagram", "name": "instagram", "link": "https://www.instagram.com/alabi171/" },
+        { "font": "fa fa-envelope-o", "name": "bobslegend795@gmail.com", "link": "#" }
+    ]
+}

@@ -1,0 +1,191 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+body, html {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  line-height: 2rem;
+  font-family: cursive; }
+
+.container {
+  min-height: 100%;
+  width: 100%; }
+
+#header-display {
+  background: url("../img/typing_keyboard.png") center center;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  min-height: 250px;
+  border-bottom: 3px solid #fff; }
+  #header-display img {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    bottom: -20%;
+    transform: translateX(-50%);
+    z-index: 2;
+    padding: 2px;
+    border: 3px solid #fff;
+    border-radius: 50%; }
+  @media (min-width: 850px) {
+    #header-display img {
+      border-radius: 0;
+      width: 110px;
+      height: 110px; } }
+  #header-display:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    min-height: 250px;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5); }
+
+#nav {
+  margin: 50px auto 0 auto;
+  display: grid;
+  font-weight: 400;
+  font-size: 0.8rem;
+  text-align: center;
+  text-transform: uppercase;
+  grid-template-columns: 1fr;
+  padding: 10px 5px;
+  border-bottom: 1px solid #cdcdcd; }
+  @media (min-width: 850px) {
+    #nav {
+      grid-template-columns: 2fr 1fr; } }
+  #nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    list-style: none; }
+    #nav ul a {
+      text-decoration: none;
+      color: #434343; }
+  #nav h2 {
+    color: teal; }
+
+#about-me, #projects, #contact .contact {
+  width: 90%;
+  margin: 20px auto 60px auto; }
+  #about-me h2, #projects h2, #contact .contact h2 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase; }
+
+#skill {
+  position: relative;
+  background-color: teal;
+  padding-top: 70px;
+  padding-bottom: 70px; }
+  #skill h2 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #fff; }
+  #skill img.skillimage {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    top: -5%;
+    transform: translateX(-50%);
+    z-index: 2;
+    padding: 2px;
+    border: 3px solid #fff;
+    border-radius: 50%; }
+  #skill .all-skill {
+    width: 90%;
+    display: grid;
+    margin: auto;
+    grid-template-columns: 1fr; }
+    @media (min-width: 850px) {
+      #skill .all-skill {
+        grid-template-columns: 1fr 1fr 1fr 1fr; } }
+    #skill .all-skill .skill {
+      padding: 10px 10px;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-column-gap: 5px; }
+      #skill .all-skill .skill img {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%; }
+        @media (min-width: 850px) {
+          #skill .all-skill .skill img {
+            height: 50px;
+            width: 50px;
+            border-radius: 0; } }
+      #skill .all-skill .skill p {
+        align-self: center;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: .8rem; }
+  @media (min-width: 850px) {
+    #skill img.skillimage {
+      border-radius: 0;
+      width: 110px;
+      height: 110px;
+      top: -15%; } }
+
+#projects, #contact .contact {
+  position: relative;
+  padding-top: 45px; }
+  #projects img, #contact .contact img {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    top: -90%;
+    transform: translateX(-50%);
+    z-index: 2;
+    padding: 2px;
+    border: 3px solid #fff;
+    border-radius: 50%; }
+  @media (min-width: 850px) {
+    #projects img, #contact .contact img {
+      border-radius: 0;
+      width: 110px;
+      height: 110px;
+      top: -100%; } }
+
+#contact {
+  background-color: #434343;
+  color: #fff; }
+  #contact .contact {
+    margin-bottom: 0; }
+    #contact .contact img {
+      position: absolute;
+      top: -32%; }
+      @media (min-width: 850px) {
+        #contact .contact img {
+          top: -42%; } }
+  #contact .contact-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3px; }
+    @media (min-width: 850px) {
+      #contact .contact-links {
+        grid-template-columns: 1fr 1fr 1fr 1fr; } }
+    #contact .contact-links div {
+      justify-self: center; }
+    #contact .contact-links a {
+      text-decoration: none;
+      color: #fff; }
+      #contact .contact-links a i {
+        font-size: 1.3rem; }
+      #contact .contact-links a span {
+        text-transform: uppercase;
+        font-size: .6rem; }
+
+#copy {
+  background-color: #2a2a2a;
+  color: #fff;
+  text-align: center; }
+
+/*# sourceMappingURL=app.css.map */
