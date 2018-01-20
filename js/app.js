@@ -1,3 +1,27 @@
+document.querySelector(`a[href="#about-me"]`).addEventListener("click", (e) => {
+    e.preventDefault();
+    document.querySelector("#about-me").scrollIntoView({behavior: "smooth"});
+});
+document.querySelector(`a[href="#skill"]`).addEventListener("click", (e) => {
+    e.preventDefault();
+    document.querySelector("#skill").scrollIntoView({behavior: "smooth"});
+});
+document.querySelector(`a[href="#projects"]`).addEventListener("click", (e) => {
+    e.preventDefault();
+    document.querySelector("#projects").scrollIntoView({behavior: "smooth"});
+});
+document.querySelector(`a[href="#contact"]`).addEventListener("click", (e) => {
+    e.preventDefault();
+    document.querySelector("#contact").scrollIntoView({behavior: "smooth"});
+});
+
+document.querySelector("img.top").addEventListener("click", () => {
+    window.scroll({
+        top: 0,
+        left: 0,
+        behavior: "smooth"
+    })
+})
 window.addEventListener("load", () => {
     let skillDiv = document.querySelector("#skill .all-skill");
     let contactDiv = document.querySelector("#contact .contact-links");

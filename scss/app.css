@@ -216,4 +216,12 @@ body, html {
   text-align: center;
   font-size: .7rem; }
 
+img.top {
+  position: fixed;
+  bottom: 10px;
+  right: 10px; }
+  @media (min-width: 850px) {
+    img.top {
+      display: none !important; } }
+
 /*# sourceMappingURL=app.css.map */

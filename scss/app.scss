@@ -263,3 +263,12 @@ body, html {
     text-align: center;
     font-size: .7rem;
 }
+
+img.top {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    @include desktop {
+        display: none!important;
+    }
+}
